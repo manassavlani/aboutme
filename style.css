@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #D4F1F4;
+}
+
+h1{
+    font-family: 'Josefin Sans';
+    font-size: 36px;
+    font-weight: 600px;
+    color: #05445E;
+}
+
+p{
+    font-family: 'Roboto';
+    color: #189AB4;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.text-box{
+    width: 90%;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 200%;
+    color: #FFFFFF;
+}
+
+.text-box p{
+    font-size: 100%;
+    color: #FFFFFF;
+    font-style: italic;
+    margin: 10px 0 5px;
+}
+
+.tattoo{
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.straw-hat{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('tattos/straw_hat.png');
+    top: 68%;
+    right: 68%;
+    width: 90px;
+    height: 70px;
+    image-rendering: pixelated;
+}
+
+.atm-logo{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('tattos/ATM.png');
+    top: 25%;
+    right: 25%;
+    width: 103px;
+    height: 30px;
+    image-rendering: pixelated;
+}
+
+.survey-corps-logo{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('tattos/survey_corps.png');
+    top: 10%;
+    right: 60%;
+    width: 48px;
+    height: 65px;
+    image-rendering: pixelated;
+}
+
+.tooltip-text{
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.straw-hat:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.atm-logo:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.survey-corps-logo:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.about-me{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #75E6DA;
+}
